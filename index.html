@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="left1">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="right1 flex" onclick="alertt()">
+            <div class="sub-box2">
+                <h3>Burbank</h3>
+            </div>
+            <div class="sub-box2">
+                <h3>Chicago</h3>
+            </div>  
+            <div class="sub-box2">
+                <h3>Dallas</h3>
+            </div>
+        </div>
+    </header>
+    <div class="top flex">
+        <div class="left1">
+            <h1>San Jose</h1>
+        </div>
+        <div class="right1 flex">
+            <p>Show Temperature in: </p>
+            <select name="" id="select" onchange="change()">
+                <option value="" onclick="change()">C</option>
+                <option value="" onclick="change()">F</option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="bottom flex">
+        <div class="sub-box">
+            <div class="subb">
+                <h2>Today</h2>
+                <img src="some_rain.png" alt="some rain">
+                <p class="midt">Some Rain</p>
+            </div>
+            <div class="flex bott">
+                <div class="sub-box">
+                    <p class="red" id="re1">24</p>
+                </div>
+                <div class="sub-box">
+                    <p class="blue" id="bl1">18</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="subb">
+                <h2>Tommorow</h2>
+                <img src="some_sun.png" alt="some sun">
+                <p class="midt">Some sun</p>
+            </div>
+            <div class="flex bott">
+                <div class="sub-box flex">
+                    <p class="red" id="re2">27</p>
+                </div>
+                <div class="sub-box">
+                    <p class="blue" id="bl2">19</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="subb">
+                <h2>Friday</h2>
+                <img src="some_clouds.png" alt="some clouds">
+                <p class="midt">Some clouds</p>
+            </div>
+            <div class="flex bott">
+                <div class="sub-box flex">
+                    <p class="red" id="re3">21</p>
+                </div>
+                <div class="sub-box">
+                    <p class="blue" id="bl3">16</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="subb">
+                <h2>Saturday</h2>
+                <img src="some_sun.png" alt="some sun">
+                <p class="midt">Some sun</p>
+            </div>
+            <div class="flex bott">
+                <div class="sub-box">
+                    <p class="red" id="re4">26</p>
+                </div>
+                <div class="sub-box">
+                    <p class="blue" id="bl4">21</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookie flex" id="btn11">
+        <div class="sub-box2">
+            <img src="cookie.png" alt="cookie">
+        </div>
+        <div class="sub-box2">
+            <div class="sub-box">
+                <h3>STOP! COOKIE TIME</h3>
+            </div>
+            <div class="sub-box">
+                <p>
+                    We Use cookies (sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyse our traffic <a href="#">Read More...</a>
+                </p>
+            </div>
+        </div>
+        <div class="sub-box2">
+            <button class="btn1"  onclick="deletee(this)">I Accept</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
